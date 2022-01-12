@@ -5,12 +5,21 @@ public class Prob5 {
 	public static void main(String[] args) {
 		for(Integer i=0;i<100;i++) {
 			char[] charlist=i.toString().toCharArray();
-			x:for(char c:charlist) {
+			int count =0;
+			for(char c:charlist) {
 				if((c=='3')||(c=='6')||(c=='9')) {
-					System.out.println(i+"짝짞");
-					break x;
+					count++;
 				}
 			}
+			if(count != 0) {
+				System.out.println();
+				System.out.print(i+" : ");
+			}
+			for(int j=0;j<count;j++) {
+				System.out.print("짝");
+			}
+			
+			
 		}
 	}
 }
