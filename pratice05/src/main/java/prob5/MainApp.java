@@ -2,7 +2,7 @@ package prob5;
 
 public class MainApp {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		try {
 			MyStack stack = new MyStack(3);
 			stack.push("Hello");
